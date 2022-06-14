@@ -1,25 +1,51 @@
 #ifndef DEBUGGER_H
 #define DEBUGGER_H
 
-//#define DEBUG_SERIAL Serial
+#include <Arduino.h>
+
+#define DEBUG_SERIAL Serial
+#define EN_DEBUG
 
 /*
 *   For debuging.
 */
+
 #ifdef EN_DEBUG
-#define DEBUGLF(x) DEBUG_SERIAL.println(F(x))
-#define DEBUGL2(x, y) DEBUG_SERIAL.print(F(x)); Serial.println(y)
-#define DEBUGX(...) DEBUG_SERIAL.printf(__VA_ARGS__)
-#define DEBUGF(x) DEBUG_SERIAL.print(F(x))
-#define DEBUG(x) DEBUG_SERIAL.print(x)
-#define DEBUGLP(x, y) DEBUG_SERIAL.print(x, y)
+
+/*
+ * With New Line
+ */
+#define DEBUGL(x)       DEBUG_SERIAL.println(x)
+#define DEBUGLF(x)      DEBUG_SERIAL.println(F(x))
+#define DEBUGL2(x, y)   DEBUG_SERIAL.print(F(x)); Serial.println(y)
+#define DEBUGLP(x, y)   DEBUG_SERIAL.println(x, y)
+
+/*
+ * Without New Line
+ */
+#define DEBUGX(...)     DEBUG_SERIAL.printf(__VA_ARGS__)
+#define DEBUG(x)        DEBUG_SERIAL.print(x)
+#define DEBUGF(x)       DEBUG_SERIAL.print(F(x))
+#define DEBUGP(x, y)    DEBUG_SERIAL.print(x, y)
+
 #else
-#define DEBUGL(x) while(false)
-#define DEBUGL2(x, y) while(false)
-#define DEBUGX(...) while(false)
-#define DEBUGF(x) while(false)
-#define DEBUG(x) while(false)
-#define DEBUGLP(x) while(false)
+
+/*
+ * With New Line
+ */
+#define DEBUGL(x)       while(false)
+#define DEBUGLF(x)      while(false)
+#define DEBUGL2(x, y)   while(false)
+#define DEBUGLP(x, y)   while(false)
+
+/*
+ * Without New Line
+ */
+#define DEBUGX(...)     while(false)
+#define DEBUG(x)        while(false)
+#define DEBUGF(x)       while(false)
+#define DEBUGP(x, y)    while(false)
+
 #endif
 
 #endif
