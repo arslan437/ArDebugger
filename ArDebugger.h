@@ -17,7 +17,7 @@
  */
 #define DEBUGL(x)       DEBUG_SERIAL.println(x)
 #define DEBUGLF(x)      DEBUG_SERIAL.println(F(x))
-#define DEBUGL2(x, y)   DEBUG_SERIAL.print(F(x)); Serial.println(y)
+#define DEBUGL2(x, y)   DEBUG_SERIAL.print(F(x)); DEBUG_SERIAL.println(y)
 #define DEBUGLP(x, y)   DEBUG_SERIAL.println(x, y)
 
 /*
