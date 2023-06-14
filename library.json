@@ -1,0 +1,27 @@
+{
+    "name": "ArDebugger",
+    "version": "0.5.0",
+    "description": "This library provides a very easy way to add debug code. After completion of your code you can disable it by commmenting only one line",
+    "keywords": "debug, arduino, Arslan",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/arslan437/ArDebugger.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Muhammad Arslan",
+        "email": "arslan@epicmicrodev.com",
+        "url": "epicmicrodev.com",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "homepage": "epicmicrodev.com",
+    "dependencies": {
+      
+    },
+    "frameworks": "*",
+    "platforms": "*"
+  }
