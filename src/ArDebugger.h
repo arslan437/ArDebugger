@@ -3,8 +3,8 @@
 
 #include <Arduino.h>
 
-#define DEBUG_SERIAL Serial
-#define EN_DEBUG
+// #define DEBUG_SERIAL Serial
+// #define EN_DEBUG
 
 /*
 *   For debuging.
