@@ -13,12 +13,12 @@
       {
         "name": "Muhammad Arslan",
         "email": "arslan@epicmicrodev.com",
-        "url": "epicmicrodev.com",
+        "url": "https://epicmicrodev.com",
         "maintainer": true
       }
     ],
     "license": "MIT",
-    "homepage": "epicmicrodev.com",
+    "homepage": "https://epicmicrodev.com",
     "dependencies": {
       
     },
